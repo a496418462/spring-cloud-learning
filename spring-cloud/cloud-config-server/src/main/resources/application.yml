@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
+
+server:
+  port: 10006
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://gitee.com/liuchaoxin/spring-cloud-learning.git
+          search-paths: canyin-spring-cloud/config
+#          username: xxx
+#          password: xxx
+
+

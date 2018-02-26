@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
+server:
+  port: 10005
+spring:
+  application:
+    name: cloud-zuul
+zuul:
+  routes:
+    ribbon:
+      path: /canyin7-zuul/**
+      serviceId: CLOUD-RIBBON
+    client:
+      path: /a/**
+      serviceId: TEST
