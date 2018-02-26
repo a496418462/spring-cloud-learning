@@ -14,7 +14,7 @@ spring:
       label: master
       server:
         git:
-          uri: https://gitee.com/liuchaoxin/spring-cloud-learning.git
+          uri: https://github.com/a496418462/spring-cloud-learning.git
           search-paths: canyin-spring-cloud/config
 #          username: xxx
 #          password: xxx
